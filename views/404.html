@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 – Sun Solutions</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+  <style>
+    #not-found {
+      min-height: 100vh; display: flex; flex-direction: column;
+      align-items: center; justify-content: center; text-align: center;
+      padding: 40px 6%; position: relative; overflow: hidden;
+    }
+    .nf-orb {
+      position: absolute; width: 600px; height: 600px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(249,115,22,.1) 0%, transparent 60%);
+      top: 50%; left: 50%; transform: translate(-50%,-50%);
+      animation: orb-pulse 6s ease-in-out infinite alternate;
+    }
+    .nf-code {
+      font-family: 'Syne', sans-serif; font-size: clamp(6rem, 20vw, 12rem);
+      font-weight: 800; line-height: 1;
+      background: linear-gradient(90deg, var(--sun-orange), var(--sun-amber));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+      position: relative; margin-bottom: 16px;
+    }
+    .nf-title { font-family: 'Syne', sans-serif; font-size: 1.5rem; font-weight: 700; margin-bottom: 12px; position: relative; }
+    .nf-sub   { color: var(--txt-mid); margin-bottom: 36px; font-weight: 300; position: relative; }
+  </style>
+</head>
+<body>
+  <section id="not-found">
+    <div class="nf-orb"></div>
+    <div class="nf-code">404</div>
+    <h1 class="nf-title">Trang không tồn tại</h1>
+    <p class="nf-sub">Có vẻ như trang bạn tìm không còn ở đây nữa ☀️</p>
+    <a href="/" class="btn-primary">← Về trang chủ</a>
+  </section>
+  <script src="/js/main.js"></script>
+</body>
+</html>

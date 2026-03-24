@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sun Solutions – Đào tạo thực tập, Gia công phần mềm & Đào tạo AI cho doanh nghiệp" />
+  <meta name="keywords" content="đào tạo thực tập IT, gia công phần mềm, AI doanh nghiệp, outsourcing Vietnam" />
+  <meta property="og:title" content="Sun Solutions – Đào tạo & Gia công Phần mềm" />
+  <meta property="og:description" content="Đối tác công nghệ tin cậy của doanh nghiệp Việt" />
+  <meta property="og:type" content="website" />
+  <title>Sun Solutions – Đào tạo & Gia công Phần mềm</title>
+
+  <!-- Preconnect fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+  <!-- Custom cursor -->
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- Scroll progress bar -->
+  <div id="progress-bar"></div>
+
+  <!-- Back to top -->
+  <button id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+  <!-- ══════════════ NAV ══════════════ -->
+  <nav id="nav">
+    <a href="#" class="nav-logo">
+      <div class="nav-logo-icon">☀️</div>
+      <div class="nav-logo-text">Sun<span>Solutions</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#services">Dịch vụ</a></li>
+      <li><a href="#why">Về chúng tôi</a></li>
+      <li><a href="#process">Quy trình</a></li>
+      <li><a href="#testimonials">Khách hàng</a></li>
+    </ul>
+    <button class="nav-cta" onclick="document.getElementById('cta').scrollIntoView({behavior:'smooth'})">
+      Liên hệ ngay
+    </button>
+  </nav>
+
+  <!-- ══════════════ HERO ══════════════ -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-orb"></div>
+    <div class="hero-grid"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        Đối tác công nghệ tin cậy của doanh nghiệp Việt
+      </div>
+
+      <h1 class="hero-title">
+        <span class="line">Bứt phá giới hạn</span>
+        <span class="line gradient-text">cùng Sun Solutions</span>
+      </h1>
+
+      <p class="hero-sub">
+        Đào tạo thực tập chuyên sâu, gia công phần mềm chất lượng cao
+        và triển khai AI cho doanh nghiệp — tất cả trong một hệ sinh thái công nghệ.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#services" class="btn-primary btn-lg">Khám phá dịch vụ →</a>
+        <a href="#why" class="btn-ghost btn-lg">Tại sao chọn chúng tôi</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-num" data-count="500">0+</div>
+          <div class="stat-label">Thực tập sinh đào tạo</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num" data-count="120">0+</div>
+          <div class="stat-label">Dự án gia công</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num" data-count="80">0+</div>
+          <div class="stat-label">Doanh nghiệp đối tác</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num" data-count="8">0+</div>
+          <div class="stat-label">Năm kinh nghiệm</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ SERVICES ══════════════ -->
+  <section id="services">
+    <div class="section-inner">
+      <div class="services-header">
+        <p class="section-label reveal">Dịch vụ của chúng tôi</p>
+        <h2 class="section-title reveal reveal-d1">
+          Ba trụ cột <span class="gradient-text">tạo nên sức mạnh</span>
+        </h2>
+        <p class="section-desc reveal reveal-d2">
+          Giải pháp toàn diện từ đào tạo nhân lực, phát triển phần mềm
+          đến ứng dụng AI — giúp doanh nghiệp luôn dẫn đầu xu thế.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Card 1 -->
+        <div class="service-card reveal reveal-d1">
+          <div class="card-border"></div>
+          <div class="service-icon icon-a">🎓</div>
+          <h3 class="service-title">Đào tạo thực tập</h3>
+          <p class="service-desc">
+            Chương trình thực tập có mentor, học viên làm việc trên dự án thực tế,
+            được định hướng lộ trình phát triển sự nghiệp rõ ràng từ ngày đầu tiên.
+          </p>
+          <div class="service-tags">
+            <span class="tag">Mentorship 1-1</span>
+            <span class="tag">Dự án thực tế</span>
+            <span class="tag">Career Path</span>
+            <span class="tag">Chứng chỉ</span>
+          </div>
+          <a href="#" class="service-link">Tìm hiểu thêm →</a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="service-card reveal reveal-d2">
+          <div class="card-border"></div>
+          <div class="service-icon icon-b">💻</div>
+          <h3 class="service-title">Gia công phần mềm</h3>
+          <p class="service-desc">
+            Đội ngũ senior developer nhiều kinh nghiệm, quy trình Agile/Scrum chuẩn mực,
+            cam kết deadline và chất lượng vượt kỳ vọng của khách hàng.
+          </p>
+          <div class="service-tags">
+            <span class="tag">Web / Mobile</span>
+            <span class="tag">Agile/Scrum</span>
+            <span class="tag">ERP / CRM</span>
+            <span class="tag">Offshore</span>
+          </div>
+          <a href="#" class="service-link">Tìm hiểu thêm →</a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="service-card reveal reveal-d3">
+          <div class="card-border"></div>
+          <div class="service-icon icon-c">🤖</div>
+          <h3 class="service-title">Đào tạo AI doanh nghiệp</h3>
+          <p class="service-desc">
+            Workshop thực chiến, triển khai AI vào quy trình vận hành,
+            nâng cao năng suất và khả năng cạnh tranh cho toàn bộ tổ chức.
+          </p>
+          <div class="service-tags">
+            <span class="tag">LLM / GenAI</span>
+            <span class="tag">Automation</span>
+            <span class="tag">Workshop</span>
+            <span class="tag">Tư vấn chiến lược</span>
+          </div>
+          <a href="#" class="service-link">Tìm hiểu thêm →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ WHY US ══════════════ -->
+  <section id="why">
+    <div class="section-inner">
+      <div class="why-layout">
+
+        <!-- Visual side -->
+        <div class="why-visual reveal from-left">
+          <div class="why-bg-circle"></div>
+          <div class="sun-ring"><div class="ring-dot"></div></div>
+          <div class="sun-ring sun-ring-2"><div class="ring-dot"></div></div>
+
+          <div class="wf wf1">
+            <div class="wf-icon">🚀</div>
+            <div class="wf-label">Tốc độ onboarding</div>
+            <div class="wf-val c1">3× Faster</div>
+            <div class="wf-line"></div>
+            <div class="wf-sub">So với trung bình thị trường</div>
+          </div>
+          <div class="wf wf2">
+            <div class="wf-icon">✅</div>
+            <div class="wf-label">Tỉ lệ hài lòng</div>
+            <div class="wf-val c2">98%</div>
+            <div class="wf-line"></div>
+            <div class="wf-sub">Đánh giá từ đối tác</div>
+          </div>
+          <div class="wf wf3">
+            <div class="wf-icon">🌟</div>
+            <div class="wf-label">Học viên có việc làm</div>
+            <div class="wf-val c3">95%</div>
+            <div class="wf-line"></div>
+            <div class="wf-sub">Trong vòng 3 tháng</div>
+          </div>
+        </div>
+
+        <!-- Text side -->
+        <div class="reveal from-right">
+          <p class="section-label">Tại sao Sun Solutions?</p>
+          <h2 class="section-title" style="margin-bottom:16px">
+            Hơn cả <span class="gradient-text">một nhà cung cấp</span> dịch vụ
+          </h2>
+          <p class="section-desc" style="margin-bottom:36px">
+            Chúng tôi là người đồng hành chiến lược — cam kết lâu dài với sự phát triển
+            của bạn, từ con người đến sản phẩm công nghệ.
+          </p>
+
+          <div class="why-points">
+            <div class="why-point">
+              <div class="why-point-icon">🎯</div>
+              <div>
+                <h4>Thực chiến từ ngày đầu tiên</h4>
+                <p>Không học lý thuyết suông. Học viên và team gia công đều làm việc
+                   trên dự án thật ngay từ ngày đầu tiên tham gia.</p>
+              </div>
+            </div>
+            <div class="why-point">
+              <div class="why-point-icon">🤝</div>
+              <div>
+                <h4>Mentor tận tâm, giàu kinh nghiệm</h4>
+                <p>Đội ngũ mentor với 5–15 năm kinh nghiệm, đã qua nhiều dự án thực tế
+                   từ startup đến enterprise tầm cỡ khu vực.</p>
+              </div>
+            </div>
+            <div class="why-point">
+              <div class="why-point-icon">⚡</div>
+              <div>
+                <h4>Công nghệ luôn cập nhật</h4>
+                <p>Stack công nghệ mới nhất: AI/LLM, cloud-native, microservices —
+                   đảm bảo bạn không bao giờ bị lạc hậu trước thị trường.</p>
+              </div>
+            </div>
+            <div class="why-point">
+              <div class="why-point-icon">🔒</div>
+              <div>
+                <h4>Cam kết minh bạch</h4>
+                <p>Hợp đồng rõ ràng, báo cáo tiến độ định kỳ, bảo mật tuyệt đối
+                   mọi thông tin dự án và dữ liệu khách hàng.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ PROCESS ══════════════ -->
+  <section id="process">
+    <div class="section-inner">
+      <div class="process-header">
+        <p class="section-label reveal">Quy trình làm việc</p>
+        <h2 class="section-title reveal reveal-d1">
+          Đơn giản. Rõ ràng. <span class="gradient-text">Hiệu quả.</span>
+        </h2>
+        <p class="section-desc reveal reveal-d2" style="max-width:480px;margin:12px auto 0">
+          Quy trình 4 bước được tinh chỉnh qua hàng trăm dự án thực tế.
+        </p>
+      </div>
+
+      <div class="process-steps">
+        <div class="process-step reveal reveal-d1">
+          <div class="step-num">🔍</div>
+          <h3 class="step-title">Khảo sát & Phân tích</h3>
+          <p class="step-desc">Lắng nghe nhu cầu, phân tích gap, xác định mục tiêu và KPI cụ thể.</p>
+        </div>
+        <div class="process-step reveal reveal-d2">
+          <div class="step-num">🗺️</div>
+          <h3 class="step-title">Lập kế hoạch</h3>
+          <p class="step-desc">Thiết kế lộ trình chi tiết, phân bổ nguồn lực và timeline rõ ràng.</p>
+        </div>
+        <div class="process-step reveal reveal-d3">
+          <div class="step-num">⚙️</div>
+          <h3 class="step-title">Triển khai</h3>
+          <p class="step-desc">Thực thi theo sprint, review định kỳ, điều chỉnh linh hoạt theo phản hồi.</p>
+        </div>
+        <div class="process-step reveal reveal-d4">
+          <div class="step-num">🎯</div>
+          <h3 class="step-title">Bàn giao & Hỗ trợ</h3>
+          <p class="step-desc">Bàn giao hoàn chỉnh, đào tạo sử dụng, hỗ trợ kỹ thuật dài hạn.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ TESTIMONIALS ══════════════ -->
+  <section id="testimonials">
+    <div class="section-inner">
+      <div class="testi-header">
+        <p class="section-label reveal">Phản hồi từ khách hàng</p>
+        <h2 class="section-title reveal reveal-d1">
+          Họ nói gì về <span class="gradient-text">Sun Solutions?</span>
+        </h2>
+      </div>
+    </div>
+    <div class="testi-wrap reveal">
+      <div class="testi-track" id="testi-track"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════ CTA ══════════════ -->
+  <section id="cta">
+    <div class="cta-orb"></div>
+    <div class="section-inner" style="position:relative">
+      <h2 class="cta-title reveal">
+        Sẵn sàng bắt đầu hành trình<br>
+        <span class="gradient-text">cùng Sun Solutions?</span>
+      </h2>
+      <p class="cta-sub reveal reveal-d1">
+        Liên hệ ngay hôm nay để nhận tư vấn miễn phí và lộ trình phù hợp với nhu cầu của bạn.
+      </p>
+      <div class="cta-actions reveal reveal-d2">
+        <a href="mailto:contact@sunsolutions.vn" class="btn-primary btn-lg">📩 Gửi yêu cầu tư vấn</a>
+        <a href="tel:+84xxx" class="btn-ghost btn-lg">📞 Gọi cho chúng tôi</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ FOOTER ══════════════ -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo">
+          <div class="nav-logo-icon">☀️</div>
+          <div class="nav-logo-text">Sun<span>Solutions</span></div>
+        </a>
+        <p>Đối tác công nghệ đáng tin cậy — đồng hành cùng doanh nghiệp
+           trên hành trình chuyển đổi số và phát triển nhân lực công nghệ.</p>
+        <div class="footer-socials">
+          <a class="social-btn" href="#">𝕏</a>
+          <a class="social-btn" href="#">in</a>
+          <a class="social-btn" href="#">f</a>
+          <a class="social-btn" href="#">▶</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Dịch vụ</h4>
+        <ul>
+          <li><a href="#">Đào tạo thực tập</a></li>
+          <li><a href="#">Gia công phần mềm</a></li>
+          <li><a href="#">Đào tạo AI doanh nghiệp</a></li>
+          <li><a href="#">Tư vấn chuyển đổi số</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Công ty</h4>
+        <ul>
+          <li><a href="#">Giới thiệu</a></li>
+          <li><a href="#">Đội ngũ</a></li>
+          <li><a href="#">Blog / Tài nguyên</a></li>
+          <li><a href="#">Tuyển dụng</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Liên hệ</h4>
+        <div class="footer-contact-item">
+          <span class="icon">📍</span>
+          <span>TP. Hồ Chí Minh, Việt Nam</span>
+        </div>
+        <div class="footer-contact-item">
+          <span class="icon">📧</span>
+          <span>contact@sunsolutions.vn</span>
+        </div>
+        <div class="footer-contact-item">
+          <span class="icon">📞</span>
+          <span>+84 (0) xxx xxx xxx</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2024 Sun Solutions. All rights reserved.</p>
+      <span class="footer-badge">☀️ Made with passion in Vietnam</span>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
