@@ -108,4 +108,25 @@ document.addEventListener('DOMContentLoaded', () => {
     if (orb) orb.style.transform = 'translateY(' + (window.scrollY * 0.3) + 'px)';
   }, { passive: true });
 
+  /* ── Active Nav Highlight ── */
+  const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+  const sections = [...document.querySelectorAll('section[id]')];
+
+  const updateActiveNav = () => {
+    const scrollY = window.scrollY + window.innerHeight * 0.3;
+    let current = sections[0]?.id || '';
+    sections.forEach(s => { if (s.offsetTop <= scrollY) current = s.id; });
+    navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + current));
+  };
+
+  window.addEventListener('scroll', updateActiveNav, { passive: true });
+  updateActiveNav();
+
+  navLinks.forEach(a => {
+    a.addEventListener('click', () => {
+      navLinks.forEach(l => l.classList.remove('active'));
+      a.classList.add('active');
+    });
+  });
+
 });
