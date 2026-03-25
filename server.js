@@ -25,7 +25,7 @@ app.use(
 // ── Static files ──
 app.use(
   express.static(path.join(__dirname, 'public'), {
-    maxAge: '7d',
+    maxAge: process.env.NODE_ENV === 'production' ? '7d' : '0',
     etag: true,
   })
 );

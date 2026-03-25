@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:sunsolutions.vn)",
+      "WebSearch",
+      "Bash(curl -sL --max-time 15 https://sunsolutions.vn/)",
+      "Bash(curl -sL --max-time 15 https://sunsolutions.vn/assets/index-COgalR-z.css)",
+      "Bash(grep -oP '#[0-9a-fA-F]{3,8}')",
+      "Bash(curl -sL --max-time 15 https://sunsolutions.vn/assets/index-CgZKz5sd.js)",
+      "Bash(grep -oE '#[0-9a-fA-F]{3,8}')",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(netstat -ano)",
+      "Bash(curl -sL --max-time 15 -o \"E:/0_SunSolution/1_project/0_webcty/sunsolutions/.claude/worktrees/vibrant-lehmann/public/img/logo_official.png\" \"https://sunsolutions.vn/assets/logo_full-L32-lr23.png\")"
+    ]
+  }
+}
