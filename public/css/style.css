@@ -36,7 +36,7 @@
 
 /* ── Reset ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
 body {
   font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
   background: var(--bg-0);
@@ -951,4 +951,19 @@ footer {
 
   body            { cursor: auto; }
   #cursor, #cursor-ring { display: none; }
+
+  /* Đổi from-left/from-right sang translateY để không bị overflow ngang */
+  .from-left, .from-right { transform: translateY(40px); }
+  .from-left.visible, .from-right.visible { transform: translateY(0); }
+
+  /* Fix overflow trên mobile */
+  .consult-cta-wrap { flex-direction: column; padding: 28px 20px; gap: 20px; }
+  .consult-cta-body { min-width: unset; width: 100%; }
+  .consult-cta-btn  { width: 100%; justify-content: center; }
+  .consult-cta-icon { align-self: flex-start; }
+
+  .service-card { grid-template-columns: 44px 1fr; column-gap: 12px; padding: 24px 16px; }
+  .service-icon { width: 44px; height: 44px; }
+  .why-cards    { grid-template-columns: 1fr; }
+  .wf-item      { padding: 16px 14px; }
 }
